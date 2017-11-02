@@ -1,5 +1,7 @@
 # Абстрактная фабрика
 
+*Абстрактная фабрика — это порождающий паттерн проектирования, который позволяет создавать семейства связанных объектов, не привязываясь к конкретным классам создаваемых объектов.*
+
 ## Полезные ресурсы:
 
 - [https://refactoring.guru/ru/design-patterns/abstract-factory](https://refactoring.guru/ru/design-patterns/abstract-factory)

@@ -1,5 +1,7 @@
 # Адаптер
 
+*Адаптер — это структурный паттерн проектирования, который обеспечивает совместную работу классов с несовместимыми интерфейсами.*
+
 ## Полезные ресурсы:
 
 - [https://thejsguy.com/2015/10/16/the-adapter-pattern-in-javascript.html](https://thejsguy.com/2015/10/16/the-adapter-pattern-in-javascript.html)
