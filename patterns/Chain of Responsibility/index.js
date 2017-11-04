@@ -1,27 +1,4 @@
-console.log(add(12, 3)(12, 12));
-
-function add(...args) {
-    let sum = args;
-  
-  	if(!sum.length) return null;
-  
-    if(args.length) {
-        sum = sum.reduce((a, b) => a + b);
-    }
-    
-    function sumFunc(...num) {
-      	if(!num.length) return sum;
-      
-        if(num.length) {
-            sum += num.reduce((a, b) => a + b);
-            return sumFunc;
-        }
-
-        return sumFunc;
-    }
-    
-    return sumFunc;
-}class MoneyChain {
+class MoneyChain {
   constructor(currentParse) {
     this.currentParse = currentParse;
     this.next = null;
