@@ -4,8 +4,6 @@
 
 ## Полезные ресурсы:
 
-- [https://refactoring.guru/ru/design-patterns/chain-of-responsibility](https://refactoring.guru/ru/design-patterns/chain-of-responsibility)
+- [https://refactoring.guru/ru/design-patterns/command](https://refactoring.guru/ru/design-patterns/command)
 
-- [http://notes84.blogspot.ru/2014/09/javascript-chain-of-responsibility.html](http://notes84.blogspot.ru/2014/09/javascript-chain-of-responsibility.html)
-
-- [http://www.dofactory.com/javascript/chain-of-responsibility-design-pattern](http://www.dofactory.com/javascript/chain-of-responsibility-design-pattern)
+- [http://notes84.blogspot.ru/2014/07/javascript-command-pattern.html](http://notes84.blogspot.ru/2014/07/javascript-command-pattern.html)
