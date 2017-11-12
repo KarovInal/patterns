@@ -24,7 +24,7 @@ class WINButton extends Button {
   }
 }
 
-class ButtonFactory {
+export default class ButtonFactory {
   constructor(type) {
     this.type = type;
   }

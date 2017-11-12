@@ -1,0 +1,36 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add --dev jest
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\bagov\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\Git\cmd;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\apache-maven-3.5.0\bin;C:\Users\bagov\AppData\Local\Microsoft\WindowsApps;C:\Users\bagov\AppData\Local\atom\bin;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\bagov\AppData\Local\Microsoft\WindowsApps;C:\Users\bagov\AppData\Roaming\npm;C:\Users\bagov\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.0.2
+
+Node version: 
+  6.11.3
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "patterns",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/KarovInal/patterns.git",
+    "author": "Inal Karov <bagov.ali07@gmail.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: connect ECONNREFUSED 104.16.60.173:443
+      at Object.exports._errnoException (util.js:1020:11)
+      at exports._exceptionWithHostPort (util.js:1043:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)

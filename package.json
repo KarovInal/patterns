@@ -1,0 +1,15 @@
+{
+  "name": "patterns",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": "https://github.com/KarovInal/patterns.git",
+  "author": "Inal Karov <bagov.ali07@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "jest": "^21.2.1"
+  }
+}
