@@ -1,6 +1,5 @@
 import ButtonFactory from '../../patterns/Abstract Factory';
 
-``
 describe('Абстрактная фабрика', () => {
   let CreatorIosButton = new ButtonFactory('ios');
   let CreatorWinButton = new ButtonFactory('win');
