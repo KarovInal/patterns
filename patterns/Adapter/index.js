@@ -24,7 +24,7 @@ class Admin {
   }
 }
 
-class UserAdapter extends User {
+export class UserAdapter extends User {
   constructor() {
     super();
   }
@@ -33,13 +33,15 @@ class UserAdapter extends User {
     let result;
     console.log(`start request by ${this.type}`);
 
-    result = this.requestAdmin();
+    result = this.requestUser();
 
-    console.log('response data' + result);   
+    console.log('response data' + result);
+
+    return result;
   }
 }
 
-class AdminAdapter extends Admin {
+export class AdminAdapter extends Admin {
   constructor() {
     super();
   }
@@ -50,7 +52,9 @@ class AdminAdapter extends Admin {
 
     result = this.requestAdmin();
 
-    console.log('response data' + result);    
+    console.log('response data' + result);
+    
+    return result;
   }
 }
 
