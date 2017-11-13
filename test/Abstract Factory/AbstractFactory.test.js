@@ -1,6 +1,6 @@
 import ButtonFactory from '../../patterns/Abstract Factory';
 
-
+``
 describe('Абстрактная фабрика', () => {
   let CreatorIosButton = new ButtonFactory('ios');
   let CreatorWinButton = new ButtonFactory('win');
@@ -10,7 +10,7 @@ describe('Абстрактная фабрика', () => {
   let winButton = CreatorWinButton.create();
   let button = CreatorButton.create();
 
-  test('Кнопка по умолчанию', () => {
+  test('Кнопка по умолчанию.', () => {
     expect(button).toEqual({ title: 'Default button' })
   });
 
