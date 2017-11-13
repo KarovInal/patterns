@@ -1,8 +1,4 @@
-class Iphone {
-  touch() {
-    console.log('touch on display');
-  }
-
+export class Iphone {
   get info() {
     return {
       model: 'Iphone X',
@@ -11,69 +7,58 @@ class Iphone {
     }
   }
 
+  touch() {
+    return 'touch on display';
+  }
+
   zoom() {
-    console.log('zoom image')
+    return 'zoom image';
   }
 
   swipe() {
-    console.log('swiper display')
+    return 'swiper display';
   }
 
   select() {
-    console.log('select item')
+    return 'select item';
   }
 }
 
-class Hand {
+export class Hand {
   constructor(device) {
     this.device = device;
   }
 
   touch() {
-    this.device.touch();
-    return this;
+    return this.device.touch();
   }
 
   pinch() {
-    this.device.zoom();
-    return this;
+    return this.device.zoom();
   }
 
   swipe() {
-    this.device.swipe();
-    return this;
+    return this.device.swipe();
   }
 
   doubleTap() {
-    this.device.zoom();
-    return this;
+    return this.device.zoom();
   }
 
   hold() {
-    this.device.select();
-    return this;
+    return this.device.select();
   }
 
   getDeviceInfo() {
-    let {
-      model,
-      os,
-      price
-    } = this.device.info;
-
-    console.log(`
-      Model: ${model}
-      OS: ${os},
-      Price: ${price}
-    `);
+    return this.device.info;
   }
 }
 
 let iphone = new Iphone;
 let hand = new Hand(iphone);
 
-hand.hold()
-    .touch()
-    .swipe();
+hand.hold();
+hand.touch();
+hand.swipe();
 
 hand.getDeviceInfo();
