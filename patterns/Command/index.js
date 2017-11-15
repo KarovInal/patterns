@@ -55,7 +55,7 @@ class CommandMinus {
 
 // Invocer
 
-class User {
+export default class User {
   constructor() {
     this.calculator = new Calculator;
     this.commands = [];
@@ -84,7 +84,7 @@ class User {
   }
 
   getResult () {
-    console.log(this.calculator.getResult());
+    return this.calculator.getResult();
   }
 }
 
