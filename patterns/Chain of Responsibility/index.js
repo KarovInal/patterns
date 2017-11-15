@@ -1,4 +1,4 @@
-class MoneyChain {
+export default class MoneyChain {
   constructor(currentParse) {
     this.currentParse = currentParse;
     this.next = null;
@@ -16,7 +16,7 @@ class MoneyChain {
   }
 }
 
-function toRub(amount) {
+export function toRub(amount) {
   let { type, count } = amount;
 
   let result = { type: 'rub', count: null };
@@ -36,7 +36,7 @@ function toRub(amount) {
   return result;
 }
 
-function toEur(amount) {
+export function toEur(amount) {
   let { type, count } = amount;
 
   let result = { type: 'eur', count: null };
@@ -56,7 +56,7 @@ function toEur(amount) {
   return result;
 }
 
-function toUsa(amount) {
+export function toUsa(amount) {
   let { type, count } = amount;
 
   let result = { type: 'usa', count: null };
