@@ -1,4 +1,4 @@
-class FactoryMail {
+export default class FactoryMail {
   constructor() {
     console.log('Вы инициализировали FactoryMail');
     console.log('Теперь вам доступен createMail метод, для отправки почты.');
@@ -27,11 +27,16 @@ class FactoryMail {
 }
 
 class Mail {
-  run() {
+  run(callback = () => {}) {
     console.log('Отправка началась');
 
     setTimeout(() => {
-      console.log(`Отправка завершена за: ${this.delay}ms`)
+      console.log(`Отправка завершена за: ${this.delay}ms`);
+      
+      callback({
+        type: this.type,
+        delay: this.delay
+      });
     }, this.delay)
   }
 }
@@ -40,7 +45,7 @@ class MailLand extends Mail {
   constructor() {
     super();
 
-    this.type ='Land';
+    this.type = 'Land';
     this.delay = 3000;
   }
 }
@@ -71,5 +76,5 @@ class MailDefault {
 
 let factor = new FactoryMail;
 
-var land = factor.createMail('land');
+let land = factor.createMail('land');
 land.run();
